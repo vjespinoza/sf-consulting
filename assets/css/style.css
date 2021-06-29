@@ -93,7 +93,8 @@ h6 {
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-    color: #222222;
+    color: #3498db;
+    /* color: #222222; */
     text-decoration: none;
 }
 
@@ -345,7 +346,9 @@ h6 {
 --------------------------------------------------------------*/
 #hero {
     width: 100%;
-    height: 70vh;
+    /* Use when client section is present*/
+    /* height: 70vh; */
+    height: 90vh;
     margin-top: 70px;
 }
 
