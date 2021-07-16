@@ -734,9 +734,6 @@ section {
     font-weight: 700;
     margin-bottom: 15px;
     font-size: 18px;
-}
-
-.services .title a {
     color: #111;
 }
 
@@ -746,7 +743,7 @@ section {
     margin-bottom: 0;
 }
 
-.services .icon-box:hover .title a,
+.services .icon-box:hover .title,
 .services .icon-box:hover .description {
     color: #fff;
 }
@@ -757,6 +754,10 @@ section {
 
 .services .icon-box:hover .icon i {
     color: #3498db;
+}
+
+.service-card {
+    cursor: pointer;
 }
 
 /*--------------------------------------------------------------
