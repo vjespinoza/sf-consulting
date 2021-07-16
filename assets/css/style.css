@@ -679,6 +679,16 @@ section {
 /*--------------------------------------------------------------
 # Services
 --------------------------------------------------------------*/
+.phase-description {
+    text-align: left;
+    font-size: 0.9rem;
+    padding: 50px;
+}
+
+.service-card {
+    cursor: pointer;
+}
+
 .services .icon-box {
     padding: 30px;
     position: relative;
@@ -688,6 +698,7 @@ section {
     transition: all 0.3s ease-in-out;
     border-radius: 8px;
     z-index: 1;
+    width: 100%;
 }
 
 .services .icon-box::before {
@@ -754,10 +765,6 @@ section {
 
 .services .icon-box:hover .icon i {
     color: #3498db;
-}
-
-.service-card {
-    cursor: pointer;
 }
 
 /*--------------------------------------------------------------
