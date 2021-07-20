@@ -494,6 +494,29 @@ section {
     margin: 0 0 10px 15px;
 }
 
+@media (max-width: 575px) {
+    .section-title h2 {
+        position: relative;
+    }
+
+    .section-title h2::before,
+    .section-title h2::after {
+        position: absolute;
+        width: 25%;
+    }
+
+    .section-title h2::before {
+        top: -10px;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+    .section-title h2::after {
+        bottom: -20px;
+        right: 50%;
+        transform: translateX(50%);
+    }
+}
+
 .section-title p {
     margin: 15px 0 0 0;
 }
@@ -1355,27 +1378,25 @@ section {
     margin: 20px 0;
     padding: 20px 0;
     border-bottom: 1px solid #eeeeee;
-}
-
-.faq .faq-item i {
-    color: #8bc4ea;
-    font-size: 24px;
-    float: left;
-    line-height: 0;
-    padding: 13px 0 0 0;
-    margin: 0;
+    cursor: pointer;
 }
 
 .faq .faq-item h4 {
     font-size: 16px;
     line-height: 26px;
     font-weight: 500;
-    margin: 0 0 10px 32px;
+    margin: 0 0 10px 0;
     font-family: "Poppins", sans-serif;
+    color: #2383c4;
 }
 
 .faq .faq-item p {
     font-size: 15px;
+}
+
+.faq .faq-item p:first-of-type {
+    font-style: italic;
+    font-weight: bold;
 }
 
 /*--------------------------------------------------------------
@@ -1618,4 +1639,34 @@ section {
 
 #footer .footer-links a:hover {
     color: #3498db;
+}
+
+/*--------------------------------------------------------------
+# Inner pages 
+--------------------------------------------------------------*/
+.service-title {
+    color: #3498db;
+    margin-bottom: 30px;
+}
+
+.service-img {
+    width: 80%;
+    float: right;
+    margin: 0 auto;
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+.service-button {
+    background: #3498db;
+    border: 0;
+    padding: 10px 24px;
+    color: #fff;
+    transition: 0.4s;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+
+.service-button:hover {
+    background: #2383c4;
+    color: #fff;
 }
