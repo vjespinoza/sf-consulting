@@ -162,7 +162,7 @@ h6 {
     background: #3498db;
     padding: 8px 25px;
     margin-left: 30px;
-    border-radius: 50px;
+    border-radius: 4px;
     color: #fff;
 }
 
@@ -171,10 +171,31 @@ h6 {
     background: #4aa3df;
 }
 
+.navbar .dropdown {
+    margin-left: 15px;
+}
+
+.navbar .dropdown.toggle-lang {
+    margin-right: 15px;
+    border: 1px solid #555555;
+    border-radius: 4px;
+    padding: 5px 7px;
+    cursor: pointer;
+}
+
+.navbar .dropdown.toggle-lang:hover {
+    border: 1px solid #3498db;
+}
+
+.navbar .dropdown.toggle-lang a i {
+    font-size: 18px;
+    margin: 0 5px 0 0;
+}
+
 .navbar .dropdown ul {
     display: block;
     position: absolute;
-    left: 30px;
+    /* left: 30px; */
     top: calc(100% + 30px);
     margin: 0;
     padding: 10px 0;
@@ -299,12 +320,20 @@ h6 {
 
 .navbar-mobile a:hover,
 .navbar-mobile .active,
+.navbar-mobile .active:focus,
 .navbar-mobile li:hover > a {
     color: #3498db;
+}
+.navbar-mobile .active.getstarted {
+    color: #fff;
 }
 
 .navbar-mobile .getstarted {
     margin: 15px;
+}
+
+.navbar-mobile .dropdown {
+    margin-left: 0;
 }
 
 .navbar-mobile .dropdown ul {
@@ -341,6 +370,20 @@ h6 {
     display: block;
 }
 
+.navbar-mobile .dropdown.toggle-lang {
+    border: none;
+    flex-grow: 1;
+    padding: 0;
+    margin: 0;
+}
+.navbar-mobile .dropdown.toggle-lang:hover {
+    border: none;
+}
+.navbar-mobile .dropdown.toggle-lang a,
+.navbar-mobile .dropdown.toggle-lang a:focus {
+    justify-content: right;
+}
+
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
@@ -373,7 +416,7 @@ h6 {
     letter-spacing: 1px;
     display: inline-block;
     padding: 10px 30px;
-    border-radius: 50px;
+    border-radius: 4px;
     transition: 0.5s;
     color: #3498db;
     border: 2px solid #3498db;
@@ -603,7 +646,7 @@ section {
     letter-spacing: 1px;
     display: inline-block;
     padding: 12px 32px;
-    border-radius: 50px;
+    border-radius: 4px;
     transition: 0.3s;
     line-height: 1;
     color: #3498db;
@@ -1378,7 +1421,6 @@ section {
     margin: 20px 0;
     padding: 20px 0;
     border-bottom: 1px solid #eeeeee;
-    cursor: pointer;
 }
 
 .faq .faq-item h4 {
@@ -1526,7 +1568,7 @@ section {
     padding: 10px 24px;
     color: #fff;
     transition: 0.4s;
-    border-radius: 50px;
+    border-radius: 4px;
 }
 
 .contact .php-email-form button[type="submit"]:hover {
@@ -1652,8 +1694,26 @@ section {
 .service-img {
     width: 80%;
     float: right;
-    margin: 0 auto;
     animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+@media (max-width: 768px) {
+    .inner-page .container .row {
+        flex-direction: column-reverse;
+    }
+
+    .service-img-container {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 60px;
+    }
+
+    .service-img {
+        width: 60%;
+        float: none;
+        -webkit-animation: none;
+        animation: none;
+    }
 }
 
 .service-button {
@@ -1662,7 +1722,7 @@ section {
     padding: 10px 24px;
     color: #fff;
     transition: 0.4s;
-    border-radius: 50px;
+    border-radius: 4px;
     margin-top: 30px;
 }
 
