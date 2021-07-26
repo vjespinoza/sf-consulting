@@ -77,13 +77,13 @@ if (es_form) {
         const errors = formValidation();
         const modal = errorAlerts(errors, "es");
 
-        Object.keys(errors).length === 0 ? e.preventDefault() : modal;
+        Object.values(errors["es"]).length !== 0 ? e.preventDefault() : modal;
     });
 } else {
     en_form_btn.addEventListener("click", (e) => {
         const errors = formValidation();
         const modal = errorAlerts(errors, "en");
 
-        Object.keys(errors).length === 0 ? e.preventDefault() : modal;
+        Object.values(errors["en"]).length !== 0 ? e.preventDefault() : modal;
     });
 }

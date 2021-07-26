@@ -14,10 +14,10 @@ if(!$conn) {
 }
 
 // Get values from inputs && trim + escape single quote
-$en_name = str_ireplace("'", "''",trim($_POST['en_name']));
-$en_email = trim($_POST['en_email']);
-$en_subject = str_ireplace("'", "''",trim($_POST['en_subject']));
-$en_message = str_ireplace("'", "''",trim($_POST['en_message']));
+$en_name = htmlentities(str_ireplace("'", "''",trim($_POST['en_name'])));
+$en_email = htmlentities(trim($_POST['en_email']));
+$en_subject = htmlentities(str_ireplace("'", "''",trim($_POST['en_subject'])));
+$en_message = htmlentities(str_ireplace("'", "''",trim($_POST['en_message'])));
 
 //Perform POST query to DB
 $query = "INSERT INTO form_en VALUES ('$en_name', '$en_email', '$en_subject', '$en_message' )";
