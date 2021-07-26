@@ -24,8 +24,6 @@ $query = "INSERT INTO form_en VALUES ('$en_name', '$en_email', '$en_subject', '$
 
 
 if(mysqli_query($conn, $query)){
-    // echo "<script type='text/javascript' src='js/alert.js'></script>";
-    // echo "<script type='text/javascript'>alert('Hello!')</script>";
     echo "<script>
             Swal.fire({
                 title: 'Awesome!',

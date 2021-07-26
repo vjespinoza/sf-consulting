@@ -929,55 +929,54 @@
                                 method="POST"
                                 role="form"
                                 class="php-email-form"
+                                id='es_form'
                             >
                                 <div class="form-group">
                                     <input
-                                        type="text"
-                                        name="es_name"
-                                        class="form-control"
-                                        id="name"
-                                        placeholder="Tu Nombre"
-                                        required
+                                    type="text"
+                                    name="es_name"
+                                    class="form-control"
+                                    id="name"
+                                    placeholder="Tu Nombre"
+                                    required
                                     />
+                                    <label for='name'>Nombre:</label>
                                 </div>
                                 <div class="form-group">
                                     <input
-                                        type="email"
-                                        class="form-control"
-                                        name="es_email"
-                                        id="email"
-                                        placeholder="Tu Email"
-                                        required
+                                    type="email"
+                                    class="form-control"
+                                    name="es_email"
+                                    id="email"
+                                    placeholder="Tu Email"
+                                    required
                                     />
+                                    <label for='email'>Email:</label>
                                 </div>
                                 <div class="form-group">
                                     <input
-                                        type="text"
-                                        class="form-control"
-                                        name="es_subject"
-                                        id="subject"
-                                        placeholder="Asunto"
-                                        required
+                                    type="text"
+                                    class="form-control"
+                                    name="es_subject"
+                                    id="subject"
+                                    placeholder="Asunto"
+                                    required
                                     />
+                                    <label for='subject'>Asunto:</label>
                                 </div>
                                 <div class="form-group">
                                     <textarea
-                                        class="form-control"
-                                        name="es_message"
-                                        rows="5"
-                                        placeholder="Mensaje"
-                                        required
+                                    class="form-control"
+                                    name="es_message"
+                                    id='message'
+                                    rows="5"
+                                    placeholder="Mensaje"
+                                    required
                                     ></textarea>
-                                </div>
-                                <div class="my-3">
-                                    <div class="loading">Cargando</div>
-                                    <div class="error-message"></div>
-                                    <div class="sent-message">
-                                        Tu mensaje ha sido enviado!
-                                    </div>
+                                    <label for='message'>Mensaje:</label>
                                 </div>
                                 <div class="text-center">
-                                    <button type="submit">Enviar Mensaje</button>
+                                    <button id='es_form_btn' type="submit">Enviar Mensaje</button>
                                 </div>
                             </form>
                         </div>
@@ -1026,17 +1025,14 @@
         <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
         <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-        <script src="assets/vendor/php-email-form/validate.js"></script>
         <script src="assets/vendor/purecounter/purecounter.js"></script>
         <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
         <!-- Template Main JS File -->
         <script src="assets/js/main.js"></script>
         <script src="assets/js/innerLinks.js"></script>
-
-        <!-- Sweet alert -->
-        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script src="assets/js/sweetAlert.js"></script>
+        <script src="assets/js/validate.js"></script>
 
     </body>
 </html>

@@ -984,6 +984,7 @@
                                         placeholder="Your Name"
                                         required
                                     />
+                                    <label for="name">Name:</label>
                                 </div>
                                 <div class="form-group">
                                     <input
@@ -994,6 +995,7 @@
                                         placeholder="Your Email"
                                         required
                                     />
+                                    <label for="email">Email:</label>
                                 </div>
                                 <div class="form-group">
                                     <input
@@ -1004,25 +1006,23 @@
                                         placeholder="Subject"
                                         required
                                     />
+                                    <label for="subject">Subject:</label>
                                 </div>
                                 <div class="form-group">
                                     <textarea
                                         class="form-control"
                                         name="en_message"
+                                        id="message"
                                         rows="5"
                                         placeholder="Message"
                                         required
                                     ></textarea>
-                                </div>
-                                <div class="my-3">
-                                    <div class="loading">Loading</div>
-                                    <div class="error-message"></div>
-                                    <div class="sent-message">
-                                        Your message has been sent!
-                                    </div>
+                                    <label for="message">Message:</label>
                                 </div>
                                 <div class="text-center">
-                                    <button type="submit">Send Message</button>
+                                    <button id="en_form_btn" type="submit">
+                                        Send Message
+                                    </button>
                                 </div>
                             </form>
                         </div>
@@ -1071,16 +1071,13 @@
         <script src="../assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
         <script src="../assets/vendor/glightbox/js/glightbox.min.js"></script>
         <script src="../assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-        <script src="../assets/vendor/php-email-form/validate.js"></script>
         <script src="../assets/vendor/purecounter/purecounter.js"></script>
         <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
         <!-- Template Main JS File -->
         <script src="../assets/js/main.js"></script>
         <script src="../assets/js/innerLinks.js"></script>
-
-        <!-- Sweet alert -->
-        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script src="../assets/js/sweetAlert.js"></script>
+        <script src="../assets/js/validate.js"></script>
     </body>
 </html>

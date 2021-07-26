@@ -1547,6 +1547,18 @@ section {
 
 .contact .php-email-form .form-group {
     margin-bottom: 20px;
+    position: relative;
+}
+
+.contact .php-email-form label {
+    cursor: text;
+    pointer-events: none;
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    background: #fff;
+    padding: 0 10px;
+    transition: all ease-in-out 200ms;
 }
 
 .contact .php-email-form input,
@@ -1555,6 +1567,22 @@ section {
     box-shadow: none;
     font-size: 14px;
     padding: 10px 15px;
+}
+
+.contact .php-email-form input::placeholder,
+.contact .php-email-form textarea::placeholder {
+    color: transparent;
+    pointer-events: none;
+}
+
+.contact .php-email-form input:focus-within ~ label,
+.contact .php-email-form textarea:focus-within ~ label,
+.contact .php-email-form input:not(:placeholder-shown) ~ label,
+.contact .php-email-form textarea:not(:placeholder-shown) ~ label {
+    transform: translate(-5px, -22px) scale(0.8);
+    transition: transform ease-in-out 200ms;
+    transform-origin: left;
+    color: #2383c4;
 }
 
 .contact .php-email-form input:focus,
@@ -1593,6 +1621,17 @@ section {
     }
 }
 
+.swal2-html-container > li,
+.swal2-html-container > p {
+    margin-bottom: 5px;
+    font-size: 1rem;
+    text-align: left;
+    margin-left: 5rem;
+}
+
+.swal2-actions > .swal2-styled.swal2-confirm {
+    background: #3498db;
+}
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/

@@ -364,59 +364,59 @@
                             data-aos-delay="300"
                         >
                             <form
-                                action="forms/contact.php"
-                                method="post"
+                                action="../../php/form_en.php"
+                                method="POST"
                                 role="form"
                                 class="php-email-form"
                             >
                                 <div class="form-group">
                                     <input
                                         type="text"
-                                        name="name"
+                                        name="en_name"
                                         class="form-control"
                                         id="name"
                                         placeholder="Your Name"
                                         required
                                     />
+                                    <label for="name">Name:</label>
                                 </div>
                                 <div class="form-group">
                                     <input
                                         type="email"
                                         class="form-control"
-                                        name="email"
+                                        name="en_email"
                                         id="email"
                                         placeholder="Your Email"
                                         required
                                     />
+                                    <label for="email">Email:</label>
                                 </div>
                                 <div class="form-group">
                                     <input
                                         type="text"
                                         class="form-control"
-                                        name="subject"
+                                        name="en_subject"
                                         id="subject"
                                         placeholder="Subject"
                                         required
                                     />
+                                    <label for="subject">Subject:</label>
                                 </div>
                                 <div class="form-group">
                                     <textarea
                                         class="form-control"
-                                        name="message"
+                                        name="en_message"
+                                        id="message"
                                         rows="5"
                                         placeholder="Message"
                                         required
                                     ></textarea>
-                                </div>
-                                <div class="my-3">
-                                    <div class="loading">Loading</div>
-                                    <div class="error-message"></div>
-                                    <div class="sent-message">
-                                        Your message has been sent!
-                                    </div>
+                                    <label for="message">Message:</label>
                                 </div>
                                 <div class="text-center">
-                                    <button type="submit">Send Message</button>
+                                    <button id="en_form_btn" type="submit">
+                                        Send Message
+                                    </button>
                                 </div>
                             </form>
                         </div>
@@ -468,12 +468,11 @@
         <script src="../../assets/vendor/php-email-form/validate.js"></script>
         <script src="../../assets/vendor/purecounter/purecounter.js"></script>
         <script src="../../assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
         <!-- Template Main JS File -->
         <script src="../../assets/js/main.js"></script>
+        <script src="../../assets/js/validate.js"></script>
 
-        <!-- Sweet alert -->
-        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script src="../../assets/js/sweetAlert.js"></script>
     </body>
 </html>

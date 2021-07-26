@@ -367,62 +367,61 @@
                             data-aos="fade-up"
                             data-aos-delay="300"
                         >
-                            <form
-                                action="forms/contact.php"
-                                method="post"
-                                role="form"
-                                class="php-email-form"
-                            >
-                                <div class="form-group">
-                                    <input
-                                        type="text"
-                                        name="name"
-                                        class="form-control"
-                                        id="name"
-                                        placeholder="Tu Nombre"
-                                        required
-                                    />
-                                </div>
-                                <div class="form-group">
-                                    <input
-                                        type="email"
-                                        class="form-control"
-                                        name="email"
-                                        id="email"
-                                        placeholder="Tu Email"
-                                        required
-                                    />
-                                </div>
-                                <div class="form-group">
-                                    <input
-                                        type="text"
-                                        class="form-control"
-                                        name="subject"
-                                        id="subject"
-                                        placeholder="Asunto"
-                                        required
-                                    />
-                                </div>
-                                <div class="form-group">
-                                    <textarea
-                                        class="form-control"
-                                        name="message"
-                                        rows="5"
-                                        placeholder="Mensaje"
-                                        required
-                                    ></textarea>
-                                </div>
-                                <div class="my-3">
-                                    <div class="loading">Cargando</div>
-                                    <div class="error-message"></div>
-                                    <div class="sent-message">
-                                        Tu mensaje ha sido enviado!
-                                    </div>
-                                </div>
-                                <div class="text-center">
-                                    <button type="submit">Enviar Mensaje</button>
-                                </div>
-                            </form>
+                        <form
+                        action="../php/form_es.php"
+                        method="POST"
+                        role="form"
+                        class="php-email-form"
+                        id='es_form'
+                    >
+                        <div class="form-group">
+                            <input
+                            type="text"
+                            name="es_name"
+                            class="form-control"
+                            id="name"
+                            placeholder="Tu Nombre"
+                            required
+                            />
+                            <label for='name'>Nombre:</label>
+                        </div>
+                        <div class="form-group">
+                            <input
+                            type="email"
+                            class="form-control"
+                            name="es_email"
+                            id="email"
+                            placeholder="Tu Email"
+                            required
+                            />
+                            <label for='email'>Email:</label>
+                        </div>
+                        <div class="form-group">
+                            <input
+                            type="text"
+                            class="form-control"
+                            name="es_subject"
+                            id="subject"
+                            placeholder="Asunto"
+                            required
+                            />
+                            <label for='subject'>Asunto:</label>
+                        </div>
+                        <div class="form-group">
+                            <textarea
+                            class="form-control"
+                            name="es_message"
+                            id='message'
+                            rows="5"
+                            placeholder="Mensaje"
+                            required
+                            ></textarea>
+                            <label for='message'>Mensaje:</label>
+                        </div>
+                        <div class="text-center">
+                            <button id='es_form_btn' type="submit">Enviar Mensaje</button>
+                        </div>
+                    </form>
                         </div>
                     </div>
                 </div>
@@ -472,12 +471,11 @@
         <script src="../assets/vendor/php-email-form/validate.js"></script>
         <script src="../assets/vendor/purecounter/purecounter.js"></script>
         <script src="../assets/vendor/swiper/swiper-bundle.min.js"></script>
+        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
         <!-- Template Main JS File -->
         <script src="../assets/js/main.js"></script>
+        <script src="assets/js/validate.js"></script>
 
-        <!-- Sweet alert -->
-        <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-        <script src="../assets/js/sweetAlert.js"></script>
     </body>
 </html>
