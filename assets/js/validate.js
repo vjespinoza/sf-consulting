@@ -21,7 +21,7 @@ const formValidation = () => {
         en: {},
     };
 
-    const nameVal = /^[a-z ,.'-]+$/gi;
+    const nameVal = /^[\u00C0-\u00FFa-z ,.'-]+$/gi;
     const emailVal = /\S+@\S+\.[a-z]+/gi;
 
     if (!data.name) {
