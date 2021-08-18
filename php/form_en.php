@@ -12,6 +12,7 @@ $en_message = htmlspecialchars(str_ireplace("'", "''",trim($_POST['en_message'])
 $query = "INSERT INTO form_en VALUES ('$en_name', '$en_email', '$en_subject', '$en_message' )";
 
 if(mysqli_query($conn, $query)){
+    include "mailer_en.php";
     echo "Success";
 } else{
     echo "ERROR: Hush! Sorry $query. "

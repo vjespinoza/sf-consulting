@@ -12,6 +12,7 @@ $es_message = htmlspecialchars(str_ireplace("'", "''",trim($_POST['es_message'])
 $query = "INSERT INTO form_es VALUES ('$es_name', '$es_email', '$es_subject', '$es_message' )";
 
 if(mysqli_query($conn, $query)){
+    include "mailer_es.php";
     echo "Success";
 } else{
     echo "ERROR: Hush! Sorry $query. "
@@ -23,3 +24,4 @@ mysqli_close($conn);
 header('Location: ' . $_SERVER['HTTP_REFERER']);
 
 ?>
+
